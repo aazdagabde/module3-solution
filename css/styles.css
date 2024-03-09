@@ -1,0 +1,61 @@
+/* Styles globaux */
+body {
+  font-size: 16px;
+  color: #fff;
+  background-color: #61122f;
+  font-family: 'Oxygen', sans-serif;
+}
+
+
+.container {
+    margin: 20px; /* Marge autour du conteneur */
+}
+
+header {
+    text-align: center; /* Centrage du texte dans l'en-tête */
+}
+
+h1 {
+    font-size: 36px; /* Taille du texte de l'en-tête */
+}
+
+/* Vue bureau */
+.section {
+    width: 33.33%; /* Chaque section occupe un tiers de l'espace */
+    float: left; /* Flottabilité à gauche pour permettre le positionnement côte à côte */
+    border: 1px solid black; /* Bordure noire de 1px autour de chaque section */
+    background-color: lightblue; /* Couleur de fond des sections */
+    position: relative; /* Position relative pour permettre le positionnement absolu des titres de section */
+    box-sizing: border-box; /* Inclure la bordure dans le calcul de la largeur */
+    padding: 20px; /* Espacement intérieur des sections */
+    text-decoration-color: black;
+}
+
+.section h2 {
+    font-size: 125%; /* Taille du titre de section, 25% plus grand que le texte du paragraphe */
+}
+h2{
+    background-color: rgb(231, 95, 95);
+    float: right; /* Positionne l'élément à droite */
+    border: 1px solid red; /* Ajoute une bordure rouge de 1 pixel */
+    width: 100px;
+    height :40px;
+
+}
+p{
+    position: relative;
+    top: 10px;
+}
+/* Vue tablette */
+@media (max-width: 991px) {
+    .section {
+        width: 50%; /* Chaque section occupe la moitié de l'espace en mode tablette */
+    }
+}
+
+/* Vue mobile */
+@media (max-width: 767px) {
+    .section {
+        width: 100%; /* Chaque section occupe toute la largeur en mode mobile */
+    }
+}
